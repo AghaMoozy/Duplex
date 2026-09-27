@@ -63,6 +63,7 @@ jobs:
           key: gradle-${{ hashFiles('**/*.gradle.kts') }}
       - name: Generate Signing Keystore
         run: |
+          rm -f release.keystore
           keytool -genkeypair -v -keystore release.keystore -alias duplex -keyalg RSA -keysize 2048 -validity 10000 -storepass duplex123 -keypass duplex123 -dname "CN=Duplex, OU=Duplex, O=Duplex, L=Global, S=Global, C=US"
           echo "KEYSTORE_PASS=duplex123" >> local.properties
           echo "ALIAS_NAME=duplex" >> local.properties
