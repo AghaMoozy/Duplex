@@ -1,4 +1,5 @@
-/******************************************************************************
+/***********        const val CORE_TYPE = "coreType"
+*******************************************************************
  *                                                                            *
  * Copyright (C) 2021 by nekohasekai <contact-sagernet@sekai.icu>             *
  * Copyright (C) 2021 by Max Lv <max.c.lv@gmail.com>                          *
@@ -275,7 +276,9 @@ object DataStore : OnPreferenceDataStoreChangeListener {
     var alwaysShowAddress by configurationStore.boolean(Key.ALWAYS_SHOW_ADDRESS)
     var showGroupName by configurationStore.boolean(Key.SHOW_GROUP_NAME)
 
-    var tunImplementation by configurationStore.stringToInt(Key.TUN_IMPLEMENTATION) { TunImplementation.GVISOR }
+        var coreType by configurationStore.string(Key.CORE_TYPE) { "smart" }
+
+var tunImplementation by configurationStore.stringToInt(Key.TUN_IMPLEMENTATION) { TunImplementation.GVISOR }
 
     var mtu by configurationStore.stringToInt(Key.MTU) { VpnService.DEFAULT_MTU }
 
