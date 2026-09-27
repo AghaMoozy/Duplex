@@ -1,6 +1,6 @@
-# Exclave
+# Duplex
 
-Exclave is a proxy client.
+Duplex is a high-performance multi-core proxy client featuring dynamic smart routing between Duplex Core and Xray Core.
 
 <details>
 
@@ -36,9 +36,9 @@ Some supported protocols:
 
 ## Download
 
-- Exclave
+- Duplex
 
-  [Download from GitHub releases](https://github.com/ExclaveNetwork/Exclave/releases)
+  [Download from GitHub releases](https://github.com/AghaMoozy/Duplex/releases)
 
   [Download from F-Droid](https://f-droid.org/packages/com.github.dyhkwong.sagernet)
 
@@ -56,15 +56,15 @@ Starting in September 2026, Google will [block apps from "sideloading"](https://
 
 ## Explanation of terms
 
-[Exclave wiki](https://github.com/ExclaveNetwork/Exclave/wiki). It contains some subjective comments. Viewer discretion is advised.
+[Duplex wiki](https://github.com/AghaMoozy/Duplex/wiki). It contains some subjective comments. Viewer discretion is advised.
 
 ## Translation
 
-Is Exclave not in your language, or the translation is incorrect or incomplete? Get involved in the translations on [Hosted Weblate](https://hosted.weblate.org/projects/exclave/).
+Is Duplex not in your language, or the translation is incorrect or incomplete? Get involved in the translations on [Hosted Weblate](https://hosted.weblate.org/projects/exclave/).
 
 ## Issue tracker
 
-Please report bugs and submit feature requests [here](https://github.com/ExclaveNetwork/Exclave/issues).
+Please report bugs and submit feature requests [here](https://github.com/AghaMoozy/Duplex/issues).
 
 - Before creating a new issue, please search for existing ones. Do not create duplicate issues.
 - Old versions are not supported. Please ensure that you are using the latest version.
@@ -75,12 +75,12 @@ Please report bugs and submit feature requests [here](https://github.com/Exclave
 
 ## Discussion
 
-- Public [discussions](https://github.com/ExclaveNetwork/Exclave/discussions) are always preferred because they can be viewed by everyone.
+- Public [discussions](https://github.com/AghaMoozy/Duplex/discussions) are always preferred because they can be viewed by everyone.
 - Private [chat group](https://t.me/s/exclavian).
 
 ## Code contribution
 
-- Create a [pull request](https://github.com/ExclaveNetwork/Exclave/pulls) to contribute code. New features needs prior communications in the issue tracker, while bug fixes does not.
+- Create a [pull request](https://github.com/AghaMoozy/Duplex/pulls) to contribute code. New features needs prior communications in the issue tracker, while bug fixes does not.
 
 ## License
 
@@ -102,7 +102,7 @@ Please report bugs and submit feature requests [here](https://github.com/Exclave
 
 ## Notice
 
-Exclave is licensed under the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. However, Exclave optionally incorporates code covered by the GNU General Public License as published by the Free Software Foundation, version 3. If `github.com/exclavenetwork/libexclavecore` is compiled with `with_clash` tag, the GNU General Public License as published by the Free Software Foundation, version 3, applies to all of Exclave.
+Duplex is licensed under the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. However, Exclave optionally incorporates code covered by the GNU General Public License as published by the Free Software Foundation, version 3. If `github.com/exclavenetwork/libexclavecore` is compiled with `with_clash` tag, the GNU General Public License as published by the Free Software Foundation, version 3, applies to all of Exclave.
 
 ## Build from source
 
@@ -120,13 +120,13 @@ Exclave is licensed under the GNU General Public License as published by the Fre
 
   - Build libexclavecore: `./run lib core` or `./library/core/build.sh`
   - Download assets: `./gradlew :app:downloadAssets`, or update assets to the latest version: `./gradlew :app:updateAssets`
-  - Build Exclave: `./gradlew :app:assembleOssRelease` (default flavor) or `./gradlew :app:assembleLegacyRelease` (legacy flavor)
+  - Build Duplex: `./gradlew :app:assembleOssRelease` (default flavor) or `./gradlew :app:assembleLegacyRelease` (legacy flavor)
 
 - Windows (x64):
 
   - Build libexclavecore: `.\library\core\build.bat`
   - Download assets: `.\gradlew.bat :app:downloadAssets`, or update assets to the latest version: `.\gradlew.bat :app:updateAssets`
-  - Build Exclave: `.\gradlew.bat :app:assembleOssRelease` (default flavor) or `.\gradlew.bat :app:assembleLegacyRelease` (legacy flavor)
+  - Build Duplex: `.\gradlew.bat :app:assembleOssRelease` (default flavor) or `.\gradlew.bat :app:assembleLegacyRelease` (legacy flavor)
 
 - APK files are located in `.\app\build\outputs\apk\oss\release` (default flavor) or `.\app\build\outputs\apk\legacy\release` (legacy flavor).
 
